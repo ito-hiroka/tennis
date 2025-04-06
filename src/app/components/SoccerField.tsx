@@ -1,8 +1,8 @@
-// src/components/SoccerField.tsx
+// src/app/components/SoccerField.tsx - vercelデプロイ修正用
 'use client'; // ← これ重要！今後、画面操作(クリックなど)を追加するためです。
 
 import { useState, useEffect, useCallback } from 'react';
-import Image from 'next/image';
+import Image from 'next/image'; // 必須：プレイヤーキャラクター表示に使用
 
 // SoccerField という名前のコンポーネント（部品）を定義します
 export default function SoccerField() {
