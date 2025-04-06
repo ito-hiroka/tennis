@@ -2,6 +2,7 @@
 'use client'; // ← これ重要！今後、画面操作(クリックなど)を追加するためです。
 
 import { useState, useEffect, useCallback } from 'react';
+import Image from 'next/image';
 
 // SoccerField という名前のコンポーネント（部品）を定義します
 export default function SoccerField() {
@@ -318,10 +319,12 @@ export default function SoccerField() {
               height: '55px'  // 半分のサイズに縮小
             }}
           >
-            {/* 画像の表示 */}
-            <img
+            {/* Next.jsのImageコンポーネントを使用 */}
+            <Image
               src="/images/cat.png"
               alt="ねこ博士"
+              width={55}
+              height={55}
               className="w-full h-full object-contain"
               style={{ transform: 'scale(1)' }}
             />
@@ -337,10 +340,12 @@ export default function SoccerField() {
               height: '55px'  // 半分のサイズに縮小
             }}
           >
-            {/* 画像の表示 */}
-            <img
+            {/* Next.jsのImageコンポーネントを使用 */}
+            <Image
               src="/images/chicken.png"
               alt="白とりさん"
+              width={55}
+              height={55}
               className="w-full h-full object-contain"
               style={{ transform: 'scale(1)' }}
             />
