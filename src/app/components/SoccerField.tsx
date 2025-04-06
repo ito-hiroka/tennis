@@ -319,10 +319,12 @@ export default function SoccerField() {
               height: '55px'  // 半分のサイズに縮小
             }}
           >
-            {/* Next.jsのImageコンポーネントの代わりに通常のimgタグを使用 */}
-            <img
+            {/* Next.jsのImageコンポーネントを使用 */}
+            <Image
               src="/images/cat.png"
               alt="ねこ博士"
+              width={55}
+              height={55}
               className="w-full h-full object-contain"
               style={{ transform: 'scale(1)' }}
             />
@@ -338,10 +340,12 @@ export default function SoccerField() {
               height: '55px'  // 半分のサイズに縮小
             }}
           >
-            {/* Next.jsのImageコンポーネントの代わりに通常のimgタグを使用 */}
-            <img
+            {/* Next.jsのImageコンポーネントを使用 */}
+            <Image
               src="/images/chicken.png"
               alt="白とりさん"
+              width={55}
+              height={55}
               className="w-full h-full object-contain"
               style={{ transform: 'scale(1)' }}
             />
