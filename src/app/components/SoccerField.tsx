@@ -223,10 +223,10 @@ export default function SoccerField() {
           setWinner('プレイヤー1');
           setRallyCount(0); // ラリーカウントをリセット
           setScore(prev => {
-            const newScore = { ...prev, player1: prev.player1 + 0.5 }; // 0.5点加算
+            const newScore = { ...prev, player1: prev.player1 + 1 }; // 0.5点加算
             
             // 勝利判定（4.5点以上で勝ち）
-            if (newScore.player1 >= 4.5) {
+            if (newScore.player1 >= 5) {
               setMatchOver(true);
               setMatchWinner('プレイヤー1');
             } else {
